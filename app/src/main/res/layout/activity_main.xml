@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/img">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="137dp"
+                android:layout_height="122dp"
+                android:layout_gravity="center"
+                android:layout_margin="30sp"
+                android:src="@drawable/elsner"
+                app:civ_border_color="#100F0F"
+                app:civ_border_width="2dp" />
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_Name"
+                    android:layout_width="360sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                    android:drawablePadding="10sp"
+                    android:padding="15sp"
+                    android:textSize="20sp"
+                    android:inputType="text"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground" />
+
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_Email"
+                    android:layout_width="360sp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:hint="Email ID"
+                    android:padding="15sp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="20sp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_Pass"
+                    android:layout_width="360sp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:drawableStart="@drawable/ic_baseline_lock_open_24"
+                    android:padding="15sp"
+                    android:textSize="20sp"
+                    android:drawablePadding="10sp"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_Conpass"
+                    android:layout_width="360sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Confirm Password"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="10sp"
+                    android:padding="15sp"
+                    android:textSize="20sp"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_Mobile"
+                    android:layout_width="360sp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enetr Mobile"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="20sp"
+                    android:inputType="phone"
+                    android:padding="15sp"
+                    android:maxLength="10"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/R1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="20sp"
+                    />
+                <RadioButton
+                    android:id="@+id/R2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="20sp"
+                    />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_Submit"
+                android:layout_width="163dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:text="Register"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/img_1">
+
+    <include layout="@layout/reg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="360sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_Name"
+                    android:hint="Name"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                    android:drawablePadding="10sp"
+                    android:padding="15sp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="200sp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground"
+                    />
+
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="360sp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_Email"
+                    android:hint="Email ID"
+                    android:padding="15sp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="20sp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="360sp"
+                    android:layout_gravity="center"
+                    android:id="@+id/et_Pass"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:drawableStart="@drawable/ic_baseline_lock_open_24"
+                    android:padding="15sp"
+                    android:textSize="20sp"
+                    android:drawablePadding="10sp"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="8dp"
+
+                    android:background="@drawable/edittextbackground"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="360sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_Mobile"
+                    android:hint="Enetr Mobile"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="20sp"
+                    android:inputType="phone"
+                    android:padding="15sp"
+                    android:maxLength="10"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/edittextbackground"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
