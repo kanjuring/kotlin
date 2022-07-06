@@ -2,6 +2,7 @@ package com.example.regkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.regkotlin.databinding.ActivityMainBinding
 import com.example.regkotlin.databinding.ActivityValidRegistationBinding
 
@@ -25,6 +26,8 @@ class ValidRegistation : AppCompatActivity() {
 
         val mobile = intent.getStringExtra("mobile")
         binding.etMobile.setText(mobile)
+
+        Toast.makeText(this, "good ", Toast.LENGTH_SHORT).show()
 
 
     }
